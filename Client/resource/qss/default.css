@@ -72,6 +72,13 @@ QLabel#labelUserMask {
     font: bold 12px;
 }
 
+
+QWidget#page,QWidget#page_2 {
+ border: 1px solid #A5A6A8;
+ border-radius: 4px;
+}
+
+
 QWidget#widgetBottom {
     /*background-image: url(:/resource/background/background.png);*/
     background-color: #31A66B;

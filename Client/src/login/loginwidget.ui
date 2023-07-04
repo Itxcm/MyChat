@@ -92,12 +92,17 @@
           <property name="text">
            <string/>
           </property>
+          <property name="pixmap">
+           <pixmap resource="../../resource/Resources.qrc">:/Image/images/robot.png</pixmap>
+          </property>
          </widget>
         </item>
         <item>
          <widget class="QLabel" name="labelWinTitle">
           <property name="styleSheet">
-           <string notr="true">color: #FFFFFF;</string>
+           <string notr="true">QLabel#labelUserHead {
+  border: 1px solid #c9c9c9;
+}</string>
           </property>
           <property name="text">
            <string/>
@@ -112,6 +117,11 @@
           <property name="text">
            <string/>
           </property>
+          <property name="icon">
+           <iconset>
+            <normalon>:/Image/common/ic_login_cfg.png</normalon>
+           </iconset>
+          </property>
          </widget>
         </item>
         <item>
@@ -122,6 +132,11 @@
           <property name="text">
            <string/>
           </property>
+          <property name="icon">
+           <iconset>
+            <normalon>:/Image/common/ic_min.png</normalon>
+           </iconset>
+          </property>
          </widget>
         </item>
         <item>
@@ -131,6 +146,11 @@
           </property>
           <property name="text">
            <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normalon>:/Image/common/ic_close_white.png</normalon>
+           </iconset>
           </property>
          </widget>
         </item>
@@ -159,6 +179,9 @@
          <widget class="QLabel" name="labelWeclcom">
           <property name="text">
            <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="../../resource/Resources.qrc">:/Image/background/logo.jpg</pixmap>
           </property>
           <property name="alignment">
            <set>Qt::AlignCenter</set>
@@ -202,10 +225,15 @@
                </size>
               </property>
               <property name="styleSheet">
-               <string notr="true"/>
+               <string notr="true">QLabel#labelUserHead {
+  border: 1px solid #c9c9c9;
+}</string>
               </property>
               <property name="text">
                <string/>
+              </property>
+              <property name="pixmap">
+               <pixmap resource="../../resource/Resources.qrc">:/Image/head/head-64.png</pixmap>
               </property>
               <property name="alignment">
                <set>Qt::AlignCenter</set>
@@ -392,6 +420,11 @@
           <property name="text">
            <string/>
           </property>
+          <property name="icon">
+           <iconset>
+            <normalon>:/Image/common/ic_close_white.png</normalon>
+           </iconset>
+          </property>
          </widget>
         </item>
         <item>
@@ -401,6 +434,11 @@
           </property>
           <property name="text">
            <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normalon>:/Image/common/ic_close_white.png</normalon>
+           </iconset>
           </property>
          </widget>
         </item>
@@ -523,6 +561,8 @@
    </widget>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="../../resource/Resources.qrc"/>
+ </resources>
  <connections/>
 </ui>

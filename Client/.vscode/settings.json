@@ -1,3 +1,7 @@
 {
-  "qtConfigure.qtKitDir": "d:/Qt/5.14.2/mingw73_64"
+  "qtConfigure.qtKitDir": "d:/Qt/5.14.2/mingw73_64",
+  "files.associations": {
+    "*.vue": "vue",
+    "fstream": "cpp"
+  }
 }
