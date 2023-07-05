@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>391</width>
-    <height>319</height>
+    <width>677</width>
+    <height>545</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,9 +17,9 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>10</y>
-     <width>370</width>
-     <height>294</height>
+     <y>13</y>
+     <width>663</width>
+     <height>513</height>
     </rect>
    </property>
    <property name="layoutDirection">
@@ -50,16 +50,16 @@
        <property name="minimumSize">
         <size>
          <width>0</width>
-         <height>30</height>
+         <height>50</height>
         </size>
        </property>
        <property name="maximumSize">
         <size>
          <width>16777215</width>
-         <height>30</height>
+         <height>50</height>
         </size>
        </property>
-       <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="0,1,0,0,0">
+       <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="0,0,0,0,0">
         <property name="spacing">
          <number>2</number>
         </property>
@@ -85,8 +85,8 @@
           </property>
           <property name="maximumSize">
            <size>
-            <width>30</width>
-            <height>30</height>
+            <width>50</width>
+            <height>50</height>
            </size>
           </property>
           <property name="text">
@@ -111,6 +111,12 @@
         </item>
         <item>
          <widget class="QPushButton" name="btnWinMenu">
+          <property name="maximumSize">
+           <size>
+            <width>50</width>
+            <height>50</height>
+           </size>
+          </property>
           <property name="focusPolicy">
            <enum>Qt::NoFocus</enum>
           </property>
@@ -126,6 +132,12 @@
         </item>
         <item>
          <widget class="QPushButton" name="btnWinMin">
+          <property name="maximumSize">
+           <size>
+            <width>50</width>
+            <height>50</height>
+           </size>
+          </property>
           <property name="focusPolicy">
            <enum>Qt::NoFocus</enum>
           </property>
@@ -141,6 +153,12 @@
         </item>
         <item>
          <widget class="QPushButton" name="btnWinClose">
+          <property name="maximumSize">
+           <size>
+            <width>50</width>
+            <height>50</height>
+           </size>
+          </property>
           <property name="focusPolicy">
            <enum>Qt::NoFocus</enum>
           </property>
@@ -177,11 +195,20 @@
         </property>
         <item>
          <widget class="QLabel" name="labelWeclcom">
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
           <property name="text">
            <string/>
           </property>
           <property name="pixmap">
            <pixmap resource="../../resource/Resources.qrc">:/Image/background/logo.jpg</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
           </property>
           <property name="alignment">
            <set>Qt::AlignCenter</set>
@@ -210,18 +237,21 @@
             <property name="spacing">
              <number>15</number>
             </property>
+            <property name="sizeConstraint">
+             <enum>QLayout::SetDefaultConstraint</enum>
+            </property>
             <item>
              <widget class="QLabel" name="labelUserHead">
               <property name="minimumSize">
                <size>
-                <width>82</width>
-                <height>82</height>
+                <width>128</width>
+                <height>128</height>
                </size>
               </property>
               <property name="maximumSize">
                <size>
-                <width>82</width>
-                <height>82</height>
+                <width>128</width>
+                <height>128</height>
                </size>
               </property>
               <property name="styleSheet">
@@ -242,6 +272,18 @@
             </item>
             <item>
              <widget class="QWidget" name="widgetInput" native="true">
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="sizeIncrement">
+               <size>
+                <width>0</width>
+                <height>-1</height>
+               </size>
+              </property>
               <layout class="QVBoxLayout" name="verticalLayout_3">
                <property name="leftMargin">
                 <number>0</number>
@@ -266,7 +308,7 @@
                  <property name="maximumSize">
                   <size>
                    <width>16777215</width>
-                   <height>25</height>
+                   <height>40</height>
                   </size>
                  </property>
                  <property name="text">
@@ -288,7 +330,7 @@
                  <property name="maximumSize">
                   <size>
                    <width>16777215</width>
-                   <height>25</height>
+                   <height>40</height>
                   </size>
                  </property>
                  <property name="text">
@@ -304,10 +346,42 @@
                </item>
                <item>
                 <layout class="QHBoxLayout" name="horizontalLayout">
+                 <property name="sizeConstraint">
+                  <enum>QLayout::SetDefaultConstraint</enum>
+                 </property>
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
                  <item>
                   <widget class="QCheckBox" name="checkBoxPasswd">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>10</pointsize>
+                    </font>
+                   </property>
                    <property name="text">
                     <string>记住密码</string>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>16</width>
+                     <height>16</height>
+                    </size>
                    </property>
                    <property name="checked">
                     <bool>true</bool>
@@ -316,8 +390,31 @@
                  </item>
                  <item>
                   <widget class="QCheckBox" name="checkBoxAutoLogin">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>10</pointsize>
+                    </font>
+                   </property>
                    <property name="text">
                     <string>自动登录</string>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>16</width>
+                     <height>16</height>
+                    </size>
                    </property>
                    <property name="checked">
                     <bool>false</bool>
@@ -338,11 +435,43 @@
             </property>
             <item>
              <widget class="QPushButton" name="btnLogin">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Agency FB</family>
+                <pointsize>-1</pointsize>
+                <weight>50</weight>
+                <bold>false</bold>
+                <kerning>true</kerning>
+               </font>
+              </property>
               <property name="focusPolicy">
                <enum>Qt::NoFocus</enum>
               </property>
               <property name="toolTip">
                <string>登录</string>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton#btnLogin{
+font-size:20px;
+}</string>
               </property>
               <property name="text">
                <string>登录</string>
